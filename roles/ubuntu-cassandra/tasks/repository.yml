@@ -1,0 +1,12 @@
+- name: Add Cassandra repository
+  apt_repository:
+    repo: "{{ cassandra_repo }}"
+    state: present
+  tags:
+    - apt
+
+- name: update cache
+  apt:
+    update_cache: yes
+  tags:
+    - apt

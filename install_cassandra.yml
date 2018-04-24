@@ -1,0 +1,9 @@
+---
+- hosts: machine
+  gather_facts: yes
+  serial: 1
+  become: yes
+  become_user: root
+  become_method: sudo
+  roles:
+    - ubuntu-cassandra

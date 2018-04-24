@@ -1,0 +1,4 @@
+cassandra_repo: deb http://www.apache.org/dist/cassandra/debian 22x main
+cassandra_dependencies:
+  - openjdk-7-jdk
+  - python-software-properties

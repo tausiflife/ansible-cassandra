@@ -1,0 +1,6 @@
+- name: install cassandra
+  apt:
+    name: cassandra
+    state: present
+    force_apt_get: yes
+    allow_unauthenticated: yes

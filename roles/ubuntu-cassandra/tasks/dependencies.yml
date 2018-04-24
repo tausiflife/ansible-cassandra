@@ -1,0 +1,7 @@
+- name: install necessary packages
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - "{{ cassandra_dependencies }}"
+
